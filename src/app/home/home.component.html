@@ -1,0 +1,15 @@
+<h1>
+  Albums List
+</h1>
+
+<div class="card-columns">
+  <div class="card" *ngFor="let album of albums" >
+    <img class="card-img-top" [src]="album.url" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{album.title}}</h5>
+      <p class="card-text">
+          <button type="button" class="btn btn-primary" [routerLink]="'/detail/'+album.albumId">Details</button>
+      </p>
+    </div>
+  </div>
+</div>

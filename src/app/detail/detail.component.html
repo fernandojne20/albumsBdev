@@ -1,0 +1,12 @@
+<h1>
+    Albums Detail
+  </h1>
+  
+  <div class="card-columns">
+    <div class="card" *ngFor="let album of albumDetails" >
+      <img class="card-img-top" [src]="album.url" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{album.title}}</h5>
+      </div>
+    </div>
+  </div>
